@@ -1,0 +1,100 @@
+.top {
+  margin-top: 20px;
+  margin-left: 20px;
+  .topOp {
+    display: flex;
+    width: 500px;
+    .btn {
+      display: flex;
+      align-items: center;
+
+      margin-left: 10px;
+      .iconfont {
+        color: #ffffff !important;
+      }
+      .icon-search{
+        cursor: pointer;
+      }
+      .search {
+        width: 200px;
+        margin-left: 10px;
+        .icon-search {
+          color: #3b3939 !important;
+        }
+      }
+      .icon-refresh {
+        color: #3b3939 !important;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+
+    .notAllow {
+      cursor: not-allowed;
+    }
+  }
+}
+.fileList {
+   width: 100%;
+  .fileItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    .fileName {
+      margin-left: 10px;
+      text-align: left;
+      flex: 1;
+      width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    span {
+      cursor: pointer;
+      &:hover {
+        color: cornflowerblue;
+      }
+    }
+    .transferStatus {
+      font-size: 14px;
+      margin-left: 10px;
+      color: #e6a23c;
+    }
+    .transferFail {
+      color: #e6473c;
+    }
+    .edit {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      margin: 0px 5px;
+      margin-left: -740px;
+      .iconfont {
+        margin-left: 10px;
+        background: cornflowerblue;
+        color: #fff;
+        padding: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .notAllow {
+        cursor: not-allowed;
+        background: cornflowerblue;
+        text-decoration: none;
+      }
+    }
+    .op {
+      width: 320px;
+      margin-left: 15px;
+      .iconfont {
+        margin-left: 10px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .iconfont::before {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
